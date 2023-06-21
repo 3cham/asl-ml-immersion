@@ -39,7 +39,7 @@ steps:
   args:
   - '-c'
   - |
-    python kfp-cli_vertex/run_pipeline.py $PROJECT_ID $_REGION $_PIPELINE_FOLDER/pipeline_vertex/covertype_pipeline.json covertype-vertex-pipeline
+    python $_PIPELINE_FOLDER/kfp-cli_vertex/run_pipeline.py $PROJECT_ID $_REGION $_PIPELINE_FOLDER/pipeline_vertex/covertype_pipeline.json covertype-vertex-pipeline
     
 # Push the images to Container Registry
 # TODO: List the images to be pushed to the project Docker registry
